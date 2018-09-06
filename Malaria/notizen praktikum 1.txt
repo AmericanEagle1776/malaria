@@ -1,0 +1,15 @@
+Ec Numbers
+pf id
+brenda
+
+modell schritte
+
+1 hemoglobin uptake from host cell
+2 diffusion (?) towards food vacuole
+3 plasmepsin digestion -> Ferriprotoporphyrin
+4 Polymerization (lipid mediated) 
+5 HRP / Heme detoxification protein -> Hemozoin
+
+protein profiling 
+
+just in time gene expression vs. translational repression

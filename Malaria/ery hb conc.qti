@@ -1,0 +1,607 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	4
+<table>
+Table1	71	2	03.09.18 09:58
+geometry	0	0	445	220	active
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	0.00000000000000e+00	7.04000000000000e+00
+1	1.02000000000000e+00	7.04000000000000e+00
+2	2.12000000000000e+00	7.04000000000000e+00
+3	3.28000000000000e+00	7.04000000000000e+00
+4	4.37000000000000e+00	7.05000000000000e+00
+5	5.46000000000000e+00	7.05000000000000e+00
+6	6.55000000000000e+00	7.06000000000000e+00
+7	7.64000000000000e+00	7.06000000000000e+00
+8	8.73000000000000e+00	7.06000000000000e+00
+9	9.83000000000000e+00	7.08000000000000e+00
+10	1.08000000000000e+01	7.08000000000000e+00
+11	1.19000000000000e+01	7.09000000000000e+00
+12	1.28000000000000e+01	7.11000000000000e+00
+13	1.38000000000000e+01	7.15000000000000e+00
+14	1.46000000000000e+01	7.16000000000000e+00
+15	1.55000000000000e+01	7.21000000000000e+00
+16	1.69000000000000e+01	7.29000000000000e+00
+17	1.78000000000000e+01	7.35000000000000e+00
+18	1.85000000000000e+01	7.44000000000000e+00
+19	1.92000000000000e+01	7.49000000000000e+00
+20	1.99000000000000e+01	7.58000000000000e+00
+21	2.03000000000000e+01	7.67000000000000e+00
+22	2.09000000000000e+01	7.73000000000000e+00
+23	2.16000000000000e+01	7.84000000000000e+00
+24	2.24000000000000e+01	7.87000000000000e+00
+25	2.30000000000000e+01	7.93000000000000e+00
+26	2.38000000000000e+01	7.87000000000000e+00
+27	2.48000000000000e+01	7.79000000000000e+00
+28	2.55000000000000e+01	7.58000000000000e+00
+29	2.59000000000000e+01	7.38000000000000e+00
+30	2.64000000000000e+01	7.07000000000000e+00
+31	2.67000000000000e+01	6.95000000000000e+00
+32	2.69000000000000e+01	6.81000000000000e+00
+33	2.72000000000000e+01	6.67000000000000e+00
+34	2.75000000000000e+01	6.54000000000000e+00
+35	2.80000000000000e+01	6.25000000000000e+00
+36	2.82000000000000e+01	6.09000000000000e+00
+37	2.86000000000000e+01	5.95000000000000e+00
+38	2.89000000000000e+01	5.81000000000000e+00
+39	2.91000000000000e+01	5.67000000000000e+00
+40	2.94000000000000e+01	5.54000000000000e+00
+41	2.98000000000000e+01	5.43000000000000e+00
+42	3.00000000000000e+01	5.26000000000000e+00
+43	3.05000000000000e+01	5.11000000000000e+00
+44	3.09000000000000e+01	4.97000000000000e+00
+45	3.13000000000000e+01	4.82000000000000e+00
+46	3.18000000000000e+01	4.59000000000000e+00
+47	3.23000000000000e+01	4.45000000000000e+00
+48	3.29000000000000e+01	4.28000000000000e+00
+49	3.34000000000000e+01	4.13000000000000e+00
+50	3.39000000000000e+01	4.02000000000000e+00
+51	3.43000000000000e+01	3.84000000000000e+00
+52	3.48000000000000e+01	3.76000000000000e+00
+53	3.51000000000000e+01	3.64000000000000e+00
+54	3.57000000000000e+01	3.50000000000000e+00
+55	3.64000000000000e+01	3.41000000000000e+00
+56	3.74000000000000e+01	3.30000000000000e+00
+57	3.78000000000000e+01	3.13000000000000e+00
+58	3.85000000000000e+01	3.07000000000000e+00
+59	3.95000000000000e+01	2.95000000000000e+00
+60	4.04000000000000e+01	2.84000000000000e+00
+61	4.16000000000000e+01	2.75000000000000e+00
+62	4.24000000000000e+01	2.64000000000000e+00
+63	4.35000000000000e+01	2.61000000000000e+00
+64	4.41000000000000e+01	2.52000000000000e+00
+65	4.48000000000000e+01	2.48000000000000e+00
+66	4.55000000000000e+01	2.45000000000000e+00
+67	4.63000000000000e+01	2.41000000000000e+00
+68	4.70000000000000e+01	2.38000000000000e+00
+69	4.81000000000000e+01	2.34000000000000e+00
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	03.09.18 10:32
+geometry	364	6	510	430	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	497	370
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+TitleFont	.SF NS Text	15	75	0	0	0
+ScaleFont0	.SF NS Text	13	75	0	0	0
+ScaleFont1	.SF NS Text	13	75	0	0	0
+ScaleFont2	.SF NS Text	13	75	0	0	0
+ScaleFont3	.SF NS Text	13	75	0	0	0
+AxisFont0	.SF NS Text	13	50	0	0	0
+AxisFont1	.SF NS Text	13	50	0	0	0
+AxisFont2	.SF NS Text	13	50	0	0	0
+AxisFont3	.SF NS Text	13	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	10	#000000	#000000	0	#000000	14	1	2	0	0	70	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8+a9*x^9+a10*x^10+a11*x^11+a12*x^12</Expression>
+<Variable>x</Variable>
+<Range>0	48.1</Range>
+<Points>100</Points>
+<Constant>a0	7.06129169544107</Constant>
+<Constant>a1	-0.364270331270776</Constant>
+<Constant>a10	2.01983589289601e-10</Constant>
+<Constant>a11	-1.60328010207464e-12</Constant>
+<Constant>a12	5.54377151940167e-15</Constant>
+<Constant>a2	0.417053618423033</Constant>
+<Constant>a3	-0.177415335346876</Constant>
+<Constant>a4	0.0383684832431537</Constant>
+<Constant>a5	-0.00483169955923435</Constant>
+<Constant>a6	0.000380687887190893</Constant>
+<Constant>a7	-1.94916656621856e-05</Constant>
+<Constant>a8	6.5806197770423e-07</Constant>
+<Constant>a9	-1.45329045959048e-08</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	2	8	0	8	5	0	0
+scale	1	2	8	0	8	5	0	0
+scale	2	-10	50	0	8	5	0	0
+scale	3	-10	50	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	1470592
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-9.3610223642173</x>
+<y>6.401384083045</y>
+<right>24.7603833865815</right>
+<bottom>2.18685121107266</bottom>
+<attachTo>0</attachTo>
+<onTop>1</onTop>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table1_2
+<b>Function</b>: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8+a9*x^9+a10*x^10+a11*x^11+a12*x^12
+<b>Chi^2/doF</b> = 5.3452988471829e-03
+<b>R^2</b> = 0.9987812860974
+<b>a0</b> = 7.0612916954411e+00 +/- 7.2053209774947e-02
+<b>a1</b> = -3.6427033127078e-01 +/- 1.7815138022044e-01
+<b>a10</b> = 2.0198358928960e-10 +/- 2.8439231396359e-11
+<b>a11</b> = -1.6032801020746e-12 +/- 2.2382577906588e-13
+<b>a12</b> = 5.5437715194017e-15 +/- 7.7345369012824e-16
+<b>a2</b> = 4.1705361842303e-01 +/- 1.3555303456581e-01
+<b>a3</b> = -1.7741533534688e-01 +/- 4.5014601022004e-02
+<b>a4</b> = 3.8368483243154e-02 +/- 8.1363103000470e-03
+<b>a5</b> = -4.8316995592343e-03 +/- 8.9557053752723e-04
+<b>a6</b> = 3.8068788719089e-04 +/- 6.3823269368949e-05
+<b>a7</b> = -1.9491665662186e-05 +/- 3.0388084241404e-06
+<b>a8</b> = 6.5806197770423e-07 +/- 9.7561424200190e-08
+<b>a9</b> = -1.4532904595905e-08 +/- 2.0854024489071e-09
+</Text>
+<Font>.SF NS Text	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	03.09.18 11:20
+geometry	445	-13	470	448	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	458	390
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+TitleFont	.SF NS Text	15	75	0	0	0
+ScaleFont0	.SF NS Text	13	75	0	0	0
+ScaleFont1	.SF NS Text	13	75	0	0	0
+ScaleFont2	.SF NS Text	13	75	0	0	0
+ScaleFont3	.SF NS Text	13	75	0	0	0
+AxisFont0	.SF NS Text	13	50	0	0	0
+AxisFont1	.SF NS Text	13	50	0	0	0
+AxisFont2	.SF NS Text	13	50	0	0	0
+AxisFont3	.SF NS Text	13	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_1	Table1_2	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	70	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8+a9*x^9+a10*x^10+a11*x^11+a12*x^12</Expression>
+<Variable>x</Variable>
+<Range>0	48.1</Range>
+<Points>100</Points>
+<Constant>a0	7.06129169544107</Constant>
+<Constant>a1	-0.364270331270776</Constant>
+<Constant>a10	2.01983589289601e-10</Constant>
+<Constant>a11	-1.60328010207464e-12</Constant>
+<Constant>a12	5.54377151940167e-15</Constant>
+<Constant>a2	0.417053618423033</Constant>
+<Constant>a3	-0.177415335346876</Constant>
+<Constant>a4	0.0383684832431537</Constant>
+<Constant>a5	-0.00483169955923435</Constant>
+<Constant>a6	0.000380687887190893</Constant>
+<Constant>a7	-1.94916656621856e-05</Constant>
+<Constant>a8	6.5806197770423e-07</Constant>
+<Constant>a9	-1.45329045959048e-08</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	2	8	0	8	5	0	0
+scale	1	2	8	0	8	5	0	0
+scale	2	-10	50	0	8	5	0	0
+scale	3	-10	50	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	1	0	1
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-8.4962406015038</x>
+<y>7.7993311036789</y>
+<right>6.39097744360902</right>
+<bottom>7.21739130434783</bottom>
+<attachTo>0</attachTo>
+<onTop>1</onTop>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+</Text>
+<Font>.SF NS Text	13	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+</multiLayer>
+<multiLayer>
+Graph3	1	1	03.09.18 11:26
+geometry	0	11	470	448	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	458	390
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+TitleFont	.SF NS Text	15	75	0	0	0
+ScaleFont0	.SF NS Text	13	75	0	0	0
+ScaleFont1	.SF NS Text	13	75	0	0	0
+ScaleFont2	.SF NS Text	13	75	0	0	0
+ScaleFont3	.SF NS Text	13	75	0	0	0
+AxisFont0	.SF NS Text	13	50	0	0	0
+AxisFont1	.SF NS Text	13	50	0	0	0
+AxisFont2	.SF NS Text	13	50	0	0	0
+AxisFont3	.SF NS Text	13	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_1	Table1_2	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	70	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8</Expression>
+<Variable>x</Variable>
+<Range>0	48.1</Range>
+<Points>100</Points>
+<Constant>a0	7.15022125461051</Constant>
+<Constant>a1	-0.396394459463284</Constant>
+<Constant>a2	0.202721525430878</Constant>
+<Constant>a3	-0.0383619551100068</Constant>
+<Constant>a4	0.0034670396567343</Constant>
+<Constant>a5	-0.000164548002293376</Constant>
+<Constant>a6	4.20232315149824e-06</Constant>
+<Constant>a7	-5.47470211260637e-08</Constant>
+<Constant>a8	2.85887868973702e-10</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	2	8	0	8	5	0	0
+scale	1	2	8	0	8	5	0	0
+scale	2	-10	50	0	8	5	0	0
+scale	3	-10	50	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-8.4962406015038</x>
+<y>7.7993311036789</y>
+<right>6.39097744360902</right>
+<bottom>7.21739130434783</bottom>
+<attachTo>0</attachTo>
+<onTop>1</onTop>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table1_2
+<b>Function</b>: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8
+<b>Chi^2/doF</b> = 2.0940264654721e-02
+<b>R^2</b> = 0.9948906351016
+<b>a0</b> = 7.1502212546105e+00 +/- 1.3061494748385e-01
+<b>a1</b> = -3.9639445946328e-01 +/- 1.3601896064409e-01
+<b>a2</b> = 2.0272152543088e-01 +/- 4.4448444381566e-02
+<b>a3</b> = -3.8361955110007e-02 +/- 6.3724225847682e-03
+<b>a4</b> = 3.4670396567343e-03 +/- 4.7772394085778e-04
+<b>a5</b> = -1.6454800229338e-04 +/- 2.0136507956638e-05
+<b>a6</b> = 4.2023231514982e-06 +/- 4.8032395032466e-07
+<b>a7</b> = -5.4747021126064e-08 +/- 6.0488069992395e-09
+<b>a8</b> = 2.8588786897370e-10 +/- 3.1233307314267e-11
+</Text>
+<Font>.SF NS Text	13	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+</multiLayer>
+<open>1</open>
+<log>
+[03.09.18 10:29	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.0000000000000e+00 to x = 4.8100000000000e+01
+a0 = 7.5746544412889e+00 +/- 2.5674124835391e-01
+a1 = -4.3778619023771e-01 +/- 1.0815100913775e-01
+a2 = 6.4511281490294e-02 +/- 1.3890304335613e-02
+a3 = -3.0302537262839e-03 +/- 7.2545040356570e-04
+a4 = 5.1186350766299e-05 +/- 1.6490036181385e-05
+a5 = -2.7079887295741e-07 +/- 1.3562926909048e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.2409350383709e-01
+R^2 = 0.9682324340629
+Adjusted R^2 = 0.9652069515927
+RMSE (Root Mean Squared Error) = 0.3522690787411
+RSS (Residual Sum of Squares) = 7.941984245574
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[03.09.18 10:30	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.0000000000000e+00 to x = 4.8100000000000e+01
+a0 = 7.1502212546105e+00 +/- 1.3061494748385e-01
+a1 = -3.9639445946328e-01 +/- 1.3601896064409e-01
+a2 = 2.0272152543088e-01 +/- 4.4448444381566e-02
+a3 = -3.8361955110007e-02 +/- 6.3724225847682e-03
+a4 = 3.4670396567343e-03 +/- 4.7772394085778e-04
+a5 = -1.6454800229338e-04 +/- 2.0136507956638e-05
+a6 = 4.2023231514982e-06 +/- 4.8032395032466e-07
+a7 = -5.4747021126064e-08 +/- 6.0488069992395e-09
+a8 = 2.8588786897370e-10 +/- 3.1233307314267e-11
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.0940264654721e-02
+R^2 = 0.9948906351016
+Adjusted R^2 = 0.9941242303669
+RMSE (Root Mean Squared Error) = 0.1447075141612
+RSS (Residual Sum of Squares) = 1.277356143938
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[03.09.18 10:31	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8+a9*x^9+a10*x^10
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.0000000000000e+00 to x = 4.8100000000000e+01
+a0 = 6.9887226144478e+00 +/- 9.6718668002267e-02
+a1 = 3.7508549166842e-01 +/- 1.5935158942235e-01
+a10 = -1.2100407228626e-12 +/- 1.4833196910346e-13
+a2 = -2.9890616550461e-01 +/- 8.1939315209951e-02
+a3 = 8.9201000267073e-02 +/- 1.8595195559067e-02
+a4 = -1.3213090673336e-02 +/- 2.2753800793063e-03
+a5 = 1.1004751852473e-03 +/- 1.6554785609054e-04
+a6 = -5.4627314610114e-05 +/- 7.4953497409405e-06
+a7 = 1.6476103763621e-06 +/- 2.1315554056471e-07
+a8 = -2.9602104947605e-08 +/- 3.7011074698062e-09
+a9 = 2.9138477462667e-10 +/- 3.5843277560693e-11
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.0160758038623e-02
+R^2 = 0.9976020891105
+Adjusted R^2 = 0.9971473129073
+RMSE (Root Mean Squared Error) = 0.1008005855073
+RSS (Residual Sum of Squares) = 0.5994847242788
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+[03.09.18 10:32	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8+a9*x^9+a10*x^10+a11*x^11+a12*x^12
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.0000000000000e+00 to x = 4.8100000000000e+01
+a0 = 7.0612916954411e+00 +/- 7.2053209774947e-02
+a1 = -3.6427033127078e-01 +/- 1.7815138022044e-01
+a10 = 2.0198358928960e-10 +/- 2.8439231396359e-11
+a11 = -1.6032801020746e-12 +/- 2.2382577906588e-13
+a12 = 5.5437715194017e-15 +/- 7.7345369012824e-16
+a2 = 4.1705361842303e-01 +/- 1.3555303456581e-01
+a3 = -1.7741533534688e-01 +/- 4.5014601022004e-02
+a4 = 3.8368483243154e-02 +/- 8.1363103000470e-03
+a5 = -4.8316995592343e-03 +/- 8.9557053752723e-04
+a6 = 3.8068788719089e-04 +/- 6.3823269368949e-05
+a7 = -1.9491665662186e-05 +/- 3.0388084241404e-06
+a8 = 6.5806197770423e-07 +/- 9.7561424200190e-08
+a9 = -1.4532904595905e-08 +/- 2.0854024489071e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.3452988471829e-03
+R^2 = 0.9987812860974
+Adjusted R^2 = 0.99849837037
+RMSE (Root Mean Squared Error) = 0.07311155070974
+RSS (Residual Sum of Squares) = 0.3046820342894
+---------------------------------------------------------------------------------------
+Iterations = 9
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+
+
+
+[03.09.18 11:21	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_2, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8+a9*x^9+a10*x^10+a11*x^11+a12*x^12
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.0000000000000e+00 to x = 4.8100000000000e+01
+a0 = 7.0612916954411e+00 +/- 7.2053209774947e-02
+a1 = -3.6427033127078e-01 +/- 1.7815138022044e-01
+a10 = 2.0198358928960e-10 +/- 2.8439231396359e-11
+a11 = -1.6032801020746e-12 +/- 2.2382577906588e-13
+a12 = 5.5437715194017e-15 +/- 7.7345369012824e-16
+a2 = 4.1705361842303e-01 +/- 1.3555303456581e-01
+a3 = -1.7741533534688e-01 +/- 4.5014601022004e-02
+a4 = 3.8368483243154e-02 +/- 8.1363103000470e-03
+a5 = -4.8316995592343e-03 +/- 8.9557053752723e-04
+a6 = 3.8068788719089e-04 +/- 6.3823269368949e-05
+a7 = -1.9491665662186e-05 +/- 3.0388084241404e-06
+a8 = 6.5806197770423e-07 +/- 9.7561424200190e-08
+a9 = -1.4532904595905e-08 +/- 2.0854024489071e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.3452988471829e-03
+R^2 = 0.9987812860974
+Adjusted R^2 = 0.99849837037
+RMSE (Root Mean Squared Error) = 0.07311155070974
+RSS (Residual Sum of Squares) = 0.3046820342894
+---------------------------------------------------------------------------------------
+Iterations = 9
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[03.09.18 11:26	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table1_2, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6+a7*x^7+a8*x^8
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.0000000000000e+00 to x = 4.8100000000000e+01
+a0 = 7.1502212546105e+00 +/- 1.3061494748385e-01
+a1 = -3.9639445946328e-01 +/- 1.3601896064409e-01
+a2 = 2.0272152543088e-01 +/- 4.4448444381566e-02
+a3 = -3.8361955110007e-02 +/- 6.3724225847682e-03
+a4 = 3.4670396567343e-03 +/- 4.7772394085778e-04
+a5 = -1.6454800229338e-04 +/- 2.0136507956638e-05
+a6 = 4.2023231514982e-06 +/- 4.8032395032466e-07
+a7 = -5.4747021126064e-08 +/- 6.0488069992395e-09
+a8 = 2.8588786897370e-10 +/- 3.1233307314267e-11
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.0940264654721e-02
+R^2 = 0.9948906351016
+Adjusted R^2 = 0.9941242303669
+RMSE (Root Mean Squared Error) = 0.1447075141612
+RSS (Residual Sum of Squares) = 1.277356143938
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+</log>
