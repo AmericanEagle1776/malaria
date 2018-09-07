@@ -52,24 +52,21 @@ def f(y, t):#function f solves dy/dt = f(y, t), where y is state vector and t is
     mpop = Mgi + Mii #whole mosquito population
 
     #PR0 = y[5] #(K0+I0)/(K0+I0+G0) 
-    r1 = IR * BR * Mii / mpop * Gi/hpop#human infection rate
-    r2 = (ICR - (IR * BR * Mii)) * Ii/hpop  #rate of losing immunity
-    r3 = IAR * Ki/hpop #human immunity acquisition rate
-    r4 = BR * MIR * (Ii+Ki)/hpop * Mgi/mpop #mosquito infection rate
-    r5 = MBR * mpop #mosquito birth rate 
-    r6 = HMDR * Ki # human malaria death rate 
-    r7G = OADR * Gi #healthy population old age deaths
-    r7K = OADR * Ki #poorly population old age deaths
-    r7I = OADR * Ii #immune population old age deaths
-    r7T = r7G + r7K + r7I #total old age death rate
-    r8 = (MOADR + MCR) * mpop #mosquito natural death rate
+    r1 = IR * BR * Mii/mpop #human infection rate
+    r2 = (ICR - (IR * BR * Mii))   #rate of losing immunity
+    r3 = IAR  #human immunity acquisition rate
+    r4 = BR * MIR * (Ii+Ki)/hpop  #mosquito infection rate
+    r5 = MBR #mosquito birth rate 
+    r6 = HMDR  # human malaria death rate 
+    r7 = OADR  #healthy population old age deaths
+    r8 = (MOADR + MCR) #mosquito natural death rate
 
-    f0 = - r1 + r2 - r7G #dG/dt
-    f1 = + r1 - r3 - r6 - r7K #dK/dt
-    f2 = - r2 + r3 - r7I #dI/dt
-    f3 = - r4 + r5 - r8 #dMg/dt
-    f4 = + r4 - r8 #dMi/dt
-    f5 = + r6 + r7T #dT/dt
+    f0 = - r1*Gi + r2*Ii - r7*Gi  #dG/dt
+    f1 = + r1*Gi - r3*Ki - r6*Ki - r7*Ki #dK/dt
+    f2 = - r2*Ii + r3*Ki - r7*Ii #dI/dt
+    f3 = - r4*Mgi + r5*mpop - r8*Mgi #dMg/dt
+    f4 = + r4*Mgi - r8*Mii #dMi/dt
+    f5 = + r6*Ki + r7*(Gi+Ki+Ii) #dT/dt
     
     
 
