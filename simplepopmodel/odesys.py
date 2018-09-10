@@ -13,9 +13,11 @@ I0  = 0    #0 infected, immune people
 Mg0 = 1000 #1000 uninfected mosquito vectors
 Mi0 = 30  #300 infected mosquito vectors
 T0 = 0 #dead humans
+Cg0 = 100 #healthy children - no immunity
+Ci0 = 0 #infected children
 #PR0 = (K0+I0)/(K0+I0+G0) # initial parasite ratio
 
-y0 = [G0, K0, I0, Mg0, Mi0, T0]# PR0] #initial conditions vector
+y0 = [G0, K0, I0, Mg0, Mi0, T0, Cg0, Ci0] #initial conditions vector
 
 #parameters
 HIR = 0.3 #chance of infection for human by infected mosquito bite
@@ -41,8 +43,13 @@ def f(y, t):#function f solves dy/dt = f(y, t), where y is state vector and t is
     Mgi = y[3]
     Mii = y[4]
     Ti  = y[5]
+    Cgi = y[6]
+    Cii = y[7]
 
-    hpop = Gi + Ki + Ii #whole human population
+
+
+    hapop = Gi + Ki + Ii #human adult population
+    hpop = Gi + Ki + Ii + Cgi + Cii #human population
     mpop = Mgi + Mii #whole mosquito population
 
     r1 = HIR * BR * Mii/mpop #human infection rate
@@ -55,14 +62,15 @@ def f(y, t):#function f solves dy/dt = f(y, t), where y is state vector and t is
     r8 = (MOADR + MCR) #mosquito natural death rate
     r9 = BiR #human birth rate
     r10 = MBR * 10 * hpop/mpop #human population dependent mosqioto birth rate
+    r11 = 0.1 #children to adult rate
 
-    f0 = - r1*Gi + r2*Ii - r7*Gi + r9*hpop #dG/dt
+    f0 = - r1*Gi + r2*Ii - r7*Gi  + r11*(Cgi+Cii) #dG/dt
     f1 = + r1*Gi - r3*Ki - r6*Ki - r7*Ki #dK/dt
     f2 = - r2*Ii + r3*Ki - r7*Ii #dI/dt
     f3 = - r4*Mgi + r5*mpop - r8*Mgi + r10*mpop #dMg/dt
     f4 = + r4*Mgi - r8*Mii #dMi/dt
-    f5 = + r6*Ki + r7*(Gi+Ki+Ii) #dT/dt
-    
-    
+    f5 = + r6*Ki + r7*(Gi+Ki+Ii+Cii) #dT/dt
+    f6 = - r1*Cgi + r9*hapop - r11*Cgi #dCg/dt
+    f7 = + r1*Cgi -r11*Cii - r6*Cii #dCi/dt
 
-    return [f0, f1, f2, f3, f4, f5]
+    return [f0, f1, f2, f3, f4, f5, f6, f7]
