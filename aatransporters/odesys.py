@@ -1,5 +1,10 @@
 import numpy as np
-import Protein
+from proteins import Protein
+
+
+
+prot1 = Protein('PFL0420w')
+
 
 
 
