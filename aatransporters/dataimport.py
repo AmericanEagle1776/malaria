@@ -1,4 +1,5 @@
 import pandas as pd
+pd.options.mode.use_inf_as_na = True
 
 aatr = pd.read_excel('aatransporters.xls', header=0)
 aatr2 = aatr.set_index('Name')  # make table where names are indices
