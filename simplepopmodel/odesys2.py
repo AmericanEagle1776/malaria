@@ -32,11 +32,9 @@ MCR = 0  # mosquito control rate - killing of mosquitos
 HMS = 5  # how many mosquitos does (the blood of) one human support
 
 
+def f(y, t):  # function f solves dy/dt = f(y, t), where y is state vector and t is time (integration variable)
 
-def f(y, t):  # function f solves dy/dt = f(y, t), where y is state vector and t is time(integration variable)
-
-
-    # curent size of population
+    # current size of population
     Gi = y[0]
     Ki = y[1]
     Ii = y[2]
@@ -62,18 +60,13 @@ def f(y, t):  # function f solves dy/dt = f(y, t), where y is state vector and t
     r11 = 0.1  # children to adult rate
     r10 = MBR * HMS * hpop / mpop  # human population dependent mosquito birth rate
 
-
-    dGdt  = - r1 * Gi + r2 * Ii - r7 * Gi + r11 * (Cgi + Cii)  # dG/dt
-    dKdt  = + r1 * Gi - r3 * Ki - r6 * Ki - r7 * Ki  # dK/dt
-    dIdt  = - r2 * Ii + r3 * Ki - r7 * Ii  # dI/dt
+    dGdt = - r1 * Gi + r2 * Ii - r7 * Gi + r11 * (Cgi + Cii)  # dG/dt
+    dKdt = + r1 * Gi - r3 * Ki - r6 * Ki - r7 * Ki  # dK/dt
+    dIdt = - r2 * Ii + r3 * Ki - r7 * Ii  # dI/dt
     dMgdt = - r4 * Mgi + r5 * mpop - r8 * Mgi + r10 * mpop  # dMg/dt
     dMidt = + r4 * Mgi - r8 * Mii  # dMi/dt
-    dTdt  = + r6 * Ki + r7 * (Gi + Ki + Ii + Cii)  # dT/dt
+    dTdt = + r6 * Ki + r7 * (Gi + Ki + Ii + Cii)  # dT/dt
     dCgdt = - r1 * Cgi + r9 * hapop - r11 * Cgi  # dCg/dt
     dCidt = + r1 * Cgi - r11 * Cii - r6 * Cii  # dCi/dt
 
-
-
     return [dGdt, dKdt, dIdt, dMgdt, dMidt, dTdt, dCgdt, dCidt]
-
-
