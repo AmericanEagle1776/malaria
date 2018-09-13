@@ -1,0 +1,23 @@
+Supplemental Table 1. Average times for codon-specific decoding cycles in seconds as
+predicted by the computational model.
+
+
+                                         2nd Base
+                A              C                  G                 U
+                Lys    0.052   Thr       0.390    Arg    0.0316     Ile    0.595   A
+                Asn    0.121   Thr       0.117    Ser    0.327      Ile    0.087   C
+                Lys    0.071   Thr       0.267    Arg    0.529      Met    0.172   G
+                Asn    0.135   Thr       0.113    Ser    0.326      Ile    0.086   U
+                Gln    0.105   Pro       0.233    Arg    0.145      Leu    0.451   A
+                His    0.251   Pro       0.918    Arg    0.103      Leu    1.411   C
+                Gln    1.233   Pro       0.056    Arg    0.440      Leu    0.330   G
+                His    0.184   Pro       0.927    Arg    0.101      Leu    0.496   U
+                Glu    0.069   Ala       0.495    Gly    0.253      Val    1.022   A
+                Asp    0.151   Ala       0.139    Gly    0.070      Val    0.129   C
+                Glu    0.569   Ala       0.056    Gly    0.323      Val    0.464   G
+                Asp    0.157   Ala       0.140    Gly    0.068      Val    0.131   U
+               Stop            Ser       0.829   Stop               Leu    0.187   A
+                Tyr    0.216   Ser       0.118    Cys    0.166      Phe    0.175   C
+               Stop            Ser       1.372    Trp    0.067      Leu    0.119   G
+                Tyr    0.226   Ser       0.121    Cys    0.166      Phe    0.174   U
+

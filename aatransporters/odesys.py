@@ -7,6 +7,12 @@ def get_rib_clearance_time(protein):
 	for codon in protein.rseq:
 		
 
+<<<<<<< HEAD
+=======
+prot1 = Protein('PFL0420w')
+prot1e = prot1.expr
+prot1c = prot1.codons
+>>>>>>> ac998c1095fa11061324e35fd5381dcd4efd6239
 
 
 p1 = Protein('PFL0420w')
