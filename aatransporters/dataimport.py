@@ -6,7 +6,8 @@ aatr2 = aatr.set_index('Name')  # make table where names are indices
 expr = pd.read_excel('3d7expression.xls', header=25)
 expr2 = expr.set_index('PlasmoDB_ID')
 codonspeeds = pd.read_excel('codonspeedsx.xls', header=0)
-
+codonspeeds.set_index('value')
+cd = {'A':1, 'C':2, 'G':3, 'U':4}  # for codon labelling
 
 def get_length(name):
 
@@ -59,8 +60,18 @@ def get_expr(name):  # makes list of expression values in 3d7expression
 
     return exprlist
 
-def get_codonspeeds(codon):
+def get_codon_clear_time(codon):
 
+    index = 0
+    a =100
     for x in codon:
-        
+        index = a * cd[x]
+        a /= 10
+
+    time = 0
+    time = codonspeeds.loc[index, time]
+    return time
+
+
+
 

@@ -7,7 +7,7 @@ import math
 
 prot1 = Protein('PFL0420w')
 e = prot1.expr
-<<<<<<< HEAD
+
 #t = np.linspace(0, 53, 53, endpoint=True)
 t = range(0, 53, 1)
 print(e)
@@ -48,7 +48,6 @@ plot1.set_ylabel('relative expression to mean')
 plot1.set_xlabel('time in hrs')
 plt.show()
 
-=======
 t = np.linspace(0, 53, 53, endpoint=True)
 r = prot1.codons
 #print(e)
@@ -81,4 +80,3 @@ print(r)
 #plot1.set_ylabel('relative expression to mean')
 #plot1.set_xlabel('time in hrs')
 #plt.show()
->>>>>>> ac998c1095fa11061324e35fd5381dcd4efd6239
