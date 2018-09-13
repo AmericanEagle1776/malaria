@@ -7,16 +7,26 @@ import math
 
 prot1 = Protein('PFL0420w')
 e = prot1.expr
-t = np.linspace(0, 53, 53, endpoint=True)
+#t = np.linspace(0, 53, 53, endpoint=True)
+t = range(0, 53, 1)
 print(e)
 print(t)
 
+a = []
 for x in e:
 
     if math.isnan(x):
+    	a = 
+    	 
+    	del x
+        
+       # a.append(e.index(x))
 
-        a = e.index(x)
-        del t[a]
+
+for x in t:
+	if t.index(x) not in a:
+		t2.append(x)
+
 
 #egood = [x for x in e if math.isnan(x) == False]
 print(e)
