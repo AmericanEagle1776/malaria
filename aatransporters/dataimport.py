@@ -5,6 +5,7 @@ aatr = pd.read_excel('aatransporters.xls', header=0)
 aatr2 = aatr.set_index('Name')  # make table where names are indices
 expr = pd.read_excel('3d7expression.xls', header=25)
 expr2 = expr.set_index('PlasmoDB_ID')
+codonspeeds = pd.read_excel('codonspeedsx.xls', header=0)
 
 
 def get_length(name):
@@ -36,6 +37,16 @@ def get_rseq(name): #read file into list
                 if c == '\n':
                     continue
                 else:
+                    #if c == 'T':     # these translate dna to rna
+                    #    c = 'A'
+                    #elif c == 'G':
+                    #    c = 'C'
+                    #elif c == 'C':
+                    #    c = 'G'
+                    #elif c == 'A':
+                    #   c = 'U'
+                    if c == 'T':  # this translates cdna to rna - it its right bc then the sequence starts on aug
+                        c = 'U'
                     rseq.append(c)
 
     return rseq
@@ -47,4 +58,9 @@ def get_expr(name):  # makes list of expression values in 3d7expression
         exprlist.append(expr2.loc[name, 'Timepoint ' + str(x+1)])
 
     return exprlist
+
+def get_codonspeeds(codon):
+
+    for x in codon:
+        
 
