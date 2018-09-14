@@ -4,7 +4,7 @@
 
 
 # initial conditions
-G0 = 300  # 1000 healthy people
+G0 = 100  # 1000 healthy people
 K0 = 300  # 10 infected, poorly people
 I0 = 300  # 0 infected, immune people
 Mg0 = 10  # 1000 uninfected mosquito vectors

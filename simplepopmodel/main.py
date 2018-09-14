@@ -1,15 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
-import odesys
+import odesys2
 
 # solve space
 start = 0.0
-end = 5
+end = 10
 number_of_points = 2001
 timegrid = np.linspace(start, end, number_of_points)
 
-result = odeint(odesys.f, odesys.y0, timegrid)  # the integration takes place with dy/dt given by f, y0 by y0 and the integration variable with limits by timegrid
+result = odeint(odesys2.f, odesys2.y0, timegrid)  # the integration takes place with dy/dt given by f, y0 by y0 and the integration variable with limits by timegrid
 
 G = []
 K = []
@@ -38,8 +38,8 @@ for row in result:
     CR.append((row[6] + row[7])/(row[0] + row[1] + row[2]+ row[6] + row[7]))  # child ratio - proportion of human population that is a child
     IR.append(row[2]/(row[0] + row[1] + row[2]))  # immunity ratio - prop of adult pop that is immune
 
-r3 = odesys.IAR * odesys.K0
-r6 = odesys.HMDR * odesys.K0
+r3 = odesys2.IAR * odesys2.K0
+r6 = odesys2.HMDR * odesys2.K0
 print(r3 + r6, '<- r3+r6')  # a check
 
 fig = plt.figure()
