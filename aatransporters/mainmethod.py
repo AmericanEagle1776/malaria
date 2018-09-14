@@ -1,6 +1,7 @@
 from proteins import Protein
 import odesys
-import scipy.integrate as odeint
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
 
 
 prot1 = Protein('PFL0420w')
@@ -20,12 +21,12 @@ y0 = [p10]
 
 result = odeint(odesys.f, odesys.y0, odesys.timegrid)
 
+P1 = result[0]
+print(P1)
+fig = plt.figure()
 
-#fig = plt.figure()
-#
-#plot1 = fig.add_subplot(111)
-#plot1.plot(t, e, label= 'relative expression')
-#plot1.set_ylabel('relative expression to mean')
-#plot1.set_xlabel('time in hrs')
-#plt.show()
-#
+plot1 = fig.add_subplot(111)
+plot1.plot(odesys.timegrid, P1, label='Prot {} expr'.format(prot1.name))
+plot1.set_ylabel('')
+plot1.set_xlabel('time in hrs')
+plt.show()
