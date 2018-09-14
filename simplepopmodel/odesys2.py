@@ -28,7 +28,7 @@ MBR = 0.5  # replication of population mosquitos
 HOADR = 0.05  # old age death rate - we have no age profile so well see
 HMDR = 0.05  # malaria death rate for infected humans
 MOADR = 0.5  # mosquito old age death rate - half of mosquitos in a given year will die of old age
-MCR = 0  # mosquito control rate - killing of mosquitos
+MCR = 1  # mosquito control rate - killing of mosquitos
 HMS = 5  # how many mosquitos does (the blood of) one human support
 
 
