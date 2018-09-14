@@ -1,9 +1,5 @@
 import numpy as np
-from dataimport import get_length
-from dataimport import get_pseq
-from dataimport import get_rseq
-from dataimport import get_expr
-
+from dataimport import get_length, get_pseq, get_rseq, get_expr
 
 
 class Protein:
@@ -15,7 +11,7 @@ class Protein:
         self.pseq = self.get_pseq1(name)  # get protein amino acid sequence via helper function
         self.rseq = self.get_rseq1(name)  # get rna sequence via helper function
         self.expr = self.get_expr1(name)  # get expression of rna via helper function
-
+        self.codons = self.get_codons(self.rseq)  # writes a list of codon 3tuples
 
     def get_length1(self, name):
         length = get_length(name)
@@ -33,3 +29,20 @@ class Protein:
         expr = get_expr(name)
         return expr
 
+    def get_codons(self, rseq):  # make list of nucleotides into list of codons # TODO: check for start and stop
+
+        codons = []
+        counter = 0
+        d = {}
+
+        for r in rseq:
+            if counter < 3:
+                d["r{}".format(counter)] = r
+                counter += 1
+
+            else:
+                codons.append((d['r0'], d['r1'], d['r2']))
+                d = {}
+                counter = 0
+
+        return codons
