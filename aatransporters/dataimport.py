@@ -62,5 +62,5 @@ def get_expr(name):  # makes list of expression values in 3d7expression
 def get_codonspeeds(codon):
 
     for x in codon:
-        
+
 
