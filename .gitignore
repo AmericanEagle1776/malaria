@@ -7,4 +7,5 @@
 /simplepopmodel/venv
 .idea/
 simplepopmodel/.idea/
-
+abmpop/__pycache__/
+abmpop/venv/

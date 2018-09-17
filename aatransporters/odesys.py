@@ -32,7 +32,7 @@ def f(y, t): # timestep function
     :return:  list of variables for t + i
     """
 
-    p1i = y[0] # current protein
+    p1i = y[0]  # current protein
 
     dp1dt = + npo.polyval(t - (p1rt / 360), p1exprpol) * meanexpr * 360 / p1initrate - p1dr*p1i
 
