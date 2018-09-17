@@ -18,6 +18,7 @@ p1starttime = 0  # the time the ribosome spends on start region not moving
 p1initrate = p1ct + p1starttime  # rate of new ribosomes on start region
 p1half = 43*60  # protein half life in seconds, Belle Tanay 2006
 p1dr = np.log(2)/p1half
+
 # start values and ensuing vector
 p10 = 0
 y0 = [p10]
@@ -34,8 +35,7 @@ def f(y, t): # timestep function
 
     p1i = y[0]  # current protein
 
-    dp1dt = + npo.polyval(t - (p1rt / 360), p1exprpol) * meanexpr * 360 / p1initrate - p1dr*p1i
-
+    dp1dt = + npo.polyval(p1exprpol, t - (p1rt / 360))[0] * meanexpr * 360 / p1initrate - p1dr*p1i
     return [dp1dt]
 
 
