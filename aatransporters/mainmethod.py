@@ -1,33 +1,34 @@
 from proteins import Protein
 import odesys
+import config
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 
-
-prot1 = Protein('PFL0420w')
-e = prot1.expr
-
-#t = np.linspace(0, 53, 53, endpoint=True)
-t = range(0, 53, 1)
-#print(e)
-#print(t)
 
 p1 = Protein('PFL0420w')
 p1e = p1.expr
 p1ct = p1.get_start_clearance_time(p1)       # a.append(e.index(x))
 
-p10 = 0
-y0 = [p10]
+result = odeint(odesys.f, odesys.y0, odesys.timegrid, args=(config.told, [], {}))
 
-result = odeint(odesys.f, odesys.y0, odesys.timegrid)
 print(result)
+P1 = []
+Pe = []
 
-P1 = result
-print(P1)
+for row in result:
+    P1.append(row[0])
+    Pe.append(row[1])
 fig = plt.figure()
 
-plot1 = fig.add_subplot(111)
-plot1.plot(odesys.timegrid, P1, label='Prot {} expr'.format(prot1.name))
+plot1 = fig.add_subplot(211)
+plot1.plot(odesys.timegrid, P1, label='Prot {} expr'.format(odesys.p1.name))
 plot1.set_ylabel('amount of protein')
 plot1.set_xlabel('time in hrs')
+plot1.legend(fontsize='small')
+
+plot2 = fig.add_subplot(212)
+plot2.plot(odesys.timegrid, Pe, label='test protein for protein half life of 43 mins')
+plot2.set_ylabel('amount of protein')
+plot2.set_xlabel('time in hrs')
+plot2.legend(fontsize='small')
 plt.show()

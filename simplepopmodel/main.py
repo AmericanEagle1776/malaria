@@ -5,12 +5,14 @@ import odesys2
 
 # solve space
 start = 0.0
-end = 10
+end = 3
 number_of_points = 2001
 timegrid = np.linspace(start, end, number_of_points)
-
+timegrid2 = np.linspace(3, 6, number_of_points)
 result = odeint(odesys2.f, odesys2.y0, timegrid)  # the integration takes place with dy/dt given by f, y0 by y0 and the integration variable with limits by timegrid
+result2 = odeint(odesys2.f, odesys2.y02, timegrid2)
 
+print(result)
 G = []
 K = []
 I = []
@@ -37,6 +39,9 @@ for row in result:
     PR.append((row[1] + row[2]) / (row[0] + row[1] + row[2]))  # parasite ratio - fraction of ppl carrying parasite
     CR.append((row[6] + row[7])/(row[0] + row[1] + row[2]+ row[6] + row[7]))  # child ratio - proportion of human population that is a child
     IR.append(row[2]/(row[0] + row[1] + row[2]))  # immunity ratio - prop of adult pop that is immune
+
+Mg02 = Mg[-1] #these are for the second integration
+Mi02 = Mi[-1]
 
 r3 = odesys2.IAR * odesys2.K0
 r6 = odesys2.HMDR * odesys2.K0

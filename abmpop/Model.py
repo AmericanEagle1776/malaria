@@ -23,10 +23,10 @@ class Model:
     def update(self):  # new timestep
         for human in self.humans:  # human activity
             human.move()
-            human.age()
+            human.age(human)
 
         for mosquito in self.mosquitoes:  # mosquito activity
-            mosquito.move()
+            mosquito.move(mosquito)
 
             for victim in self.humans:  # bite if in vicinity # TODO: only bite once per timestep should have worked
                 if abs(victim.coordinate - mosquito.coordinate) <= (3, 3):
@@ -34,9 +34,9 @@ class Model:
                     break
 
             chance = np.random.randint(0, 10)  # for a random occurrence
-            if (mosquito.blood_meals == 2 and chance >= 5):  # breeds half the time it already has fed twice
+            if mosquito.blood_meals == 2 and chance >= 5:  # breeds half the time it already has fed twice
                 mosquito.breed(self.mosquitoes)
-            elif (mosquito.blood_meals == 3):  # always bites if it has fed 3 times
+            elif mosquito.blood_meals == 3:  # always bites if it has fed 3 times
                 mosquito.breed(self.mosquitoes)
             else:
                 continue

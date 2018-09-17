@@ -2,6 +2,7 @@
 # time will be in days
 # population size in number of individuals
 
+import main
 
 # initial conditions
 G0 = 100  # 1000 healthy people
@@ -15,6 +16,7 @@ Ci0 = 50  # infected children
 # PR0 = (K0+I0)/(K0+I0+G0) # initial parasite ratio
 
 y0 = [G0, K0, I0, Mg0, Mi0, T0, Cg0, Ci0]  # initial conditions vector
+y02 = [G0, K0, I0, main.Mg02, main.Mi02, T0, Cg0, Ci0]  # initial conditions vector
 
 # parameters
 HIR = 0.3  # chance of infection for human by infected mosquito bite
@@ -49,7 +51,7 @@ def f(y, t):  # function f solves dy/dt = f(y, t), where y is state vector and t
     mpop = Mgi + Mii  # whole mosquito population
 
     r1 = HIR * BR * Mii / mpop  # human infection rate
-    r2 = ICR / r1  # r1 #* Ii  #rate of losing immunity
+    r2 = ICR / r1  # r1 #* Ii  # rate of losing immunity
     r3 = IAR  # human immunity acquisition rate
     r4 = BR * MIR * (Ii + Ki) / hpop  # mosquito infection rate
     r5 = MBR  # mosquito birth rate
@@ -68,5 +70,6 @@ def f(y, t):  # function f solves dy/dt = f(y, t), where y is state vector and t
     dTdt = + r6 * Ki + r7 * (Gi + Ki + Ii + Cii)  # dT/dt
     dCgdt = - r1 * Cgi + r9 * hapop - r11 * Cgi  # dCg/dt
     dCidt = + r1 * Cgi - r11 * Cii - r6 * Cii  # dCi/dt
+
 
     return [dGdt, dKdt, dIdt, dMgdt, dMidt, dTdt, dCgdt, dCidt]
