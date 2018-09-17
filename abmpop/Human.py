@@ -12,20 +12,27 @@ class Human:
 
         self.health_status = health_status
 
-        x_coordinate = np.random.randint(0, 100)
-        y_coordinate = np.random.randint(0, 100)
+        x_coordinate = np.random.randint(0, 20)
+        y_coordinate = np.random.randint(0, 20)
 
         self.coordinate = (x_coordinate, y_coordinate)  # place
-
+        self.history = []
         self.no_of_infections = no_of_infections  # no of infections lifetime total
         self.days_wo_infection = days_wo_infection  # days since last infection clearance
 
-
-
     def move(self):
-        self.coordinate[0] += np.random.randint(-2, 2)  # the humans position moves by up to +- 2 in every direction
-        self.coordinate[1] += np.random.randint(-2, 2)
 
+        x_coordinate = self.coordinate[0]
+        y_coordinate = self.coordinate[1]
+        x_coordinate += np.random.randint(-2, 2)  # the humans position moves by up to +- 2 in every direction
+        y_coordinate += np.random.randint(-2, 2)
+        self.update_coordinate(x_coordinate, y_coordinate)
+
+    def update_coordinate(self, x_coordinate, y_coordinate):
+
+        self.history.append(self.coordinate)
+        self.coordinate = (x_coordinate, y_coordinate)
+        
     def age(self, human):
         human.age_in_yrs += 1/365
         human.days_wo_infection += 1
@@ -42,13 +49,9 @@ class Human:
         else:
             human.health_status = 'immune'
 
-
-
-
     def illness(self, human):
 
         if human.health_status == 'sick':
             chance = np.random.randint(0, 20)
             if chance == 1:
                 human = None
-
