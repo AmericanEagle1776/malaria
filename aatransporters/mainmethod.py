@@ -20,13 +20,14 @@ p10 = 0
 y0 = [p10]
 
 result = odeint(odesys.f, odesys.y0, odesys.timegrid)
+print(result)
 
-P1 = result[0]
+P1 = result
 print(P1)
 fig = plt.figure()
 
 plot1 = fig.add_subplot(111)
 plot1.plot(odesys.timegrid, P1, label='Prot {} expr'.format(prot1.name))
-plot1.set_ylabel('')
+plot1.set_ylabel('amount of protein')
 plot1.set_xlabel('time in hrs')
 plt.show()
