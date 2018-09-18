@@ -1,2 +1,2 @@
 
-told = [0]
+told = float(0)

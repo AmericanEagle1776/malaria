@@ -7,7 +7,7 @@ import matplotlib as plt
 
 class Protein:
 
-    def __init__(self, name):
+    def __init__(self, name, start_time = 0):
 
         self.name = name
         self.length = self.get_length1(name)  # get length in amount of amino acids via helper function
@@ -16,6 +16,11 @@ class Protein:
         self.expr = self.get_expr1(name)  # get expression of rna via helper function
         self.codons = self.get_codons(self.rseq)  # writes a list of codon 3tuples
         self.rel_expr_by_time = self.get_expr_by_time(self.expr)  # gets an expression profile
+        self.start_clearance_time = self.get_start_clearance_time()  # time for ribosome to run first ten codons
+        self.read_time = self.get_read_time()
+        self.start_time = start_time
+        self.init_rate = 1/(self.start_time+self.start_clearance_time)
+
 
     def get_length1(self, name):    # these next methods get stuff from he dataimport.py
         length = di.get_length(name)
@@ -41,7 +46,7 @@ class Protein:
 
         for r in rseq:
             if counter < 3:
-                d["r{}".format(counter)] = r
+                d[f'r{counter}'] = r
                 counter += 1
 
             else:
@@ -72,11 +77,11 @@ class Protein:
         exprcurve = popt
         return exprcurve
 
-    def get_start_clearance_time(self, protein):  # time for ribosome clearance of first ten codons
+    def get_start_clearance_time(self):  # time for ribosome clearance of first ten codons
 
         time = 0
         counter = 0
-        for codon in protein.codons:
+        for codon in self.codons:
             counter += 1
             time += di.get_codon_clear_time(codon)
             if counter == 10:
@@ -84,18 +89,19 @@ class Protein:
 
         return time
 
-    def get_read_time(self, protein):  # total read time of protein by ribosome
+    def get_read_time(self):  # total read time of protein by ribosome
 
         time = 0
         counter = 0
-        for codon in protein.codons:
+        for codon in self.codons:
             counter += 1
             if np.isnan(di.get_codon_clear_time(codon)):
                 continue
             else:
                 time += di.get_codon_clear_time(codon)
 
-            if counter == protein.length:
+            if counter == self.length:
                 break
 
         return time
+
