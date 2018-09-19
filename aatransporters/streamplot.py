@@ -20,8 +20,13 @@ print(results_ab_vals)
 #print(results_ab_vals)
 fig = plt.figure()
 plot1 = fig.add_subplot(111)
-plot1.imshow(results_ab_vals, cmap='autumn')
-plot1.set_xlabel('rna value')
-plot1.set_ylabel('half life')
+plot1.imshow(results_ab_vals, cmap='inferno', origin='lower')
+plot1.set_ylabel('rna value')
+plot1.set_xlabel('half life')
+plot1.set_xticklabels(np.linspace(1, 1000, 20))
+
+for tick in plot1.get_xticklabels():
+    tick.set_rotation(45)
+#cbar = plt.colorbar(plot1)
 
 plt.show()

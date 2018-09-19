@@ -8,8 +8,8 @@ import pickle
 
 # creating an array of results for different values for the absolute mrna expression and the protein half life
 step = 0
-rna_range = np.linspace(10, 10000, 10)
-half_life_range = np.linspace(1, 1000, 10)
+rna_range = np.linspace(10, 10000, 20)
+half_life_range = np.linspace(1, 1000, 20)
 eval_timepoints = np.linspace(0, 53, 1000)
 results = [] #this will be the results with nesting order rna, half life
 for rna_abundance in rna_range:
