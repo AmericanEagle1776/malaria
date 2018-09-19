@@ -6,13 +6,13 @@ import numpy.polynomial.polynomial as npo
 p1 = Protein('PFL0420w')  # new protein
 p2 = Protein('PFB0435c')
 p1e = p1.expr  # protein expression list, relative
-p1ct = p1.get_start_clearance_time(p1)  # ribosome start area clearance g
-p1rt = p1.get_read_time(p1)  # ribosome read time for whole protein
+p1ct = p1.get_start_clearance_time()  # ribosome start area clearance g
+p1rt = p1.get_read_time()  # ribosome read time for whole protein
 p1l = p1.length  # protein length in no of amino acids
 p1exprpol = p1.get_expr_by_time(p1e)  # polynomial fit of protein expression, returns numpy Polynomial
 p2e = p2.expr  # protein expression list, relative
-p2ct = p2.get_start_clearance_time(p2)  # ribosome start area clearance g
-p2rt = p2.get_read_time(p2)  # ribosome read time for whole protein
+p2ct = p2.get_start_clearance_time()  # ribosome start area clearance g
+p2rt = p2.get_read_time()  # ribosome read time for whole protein
 p2l = p2.length  # protein length in no of amino acids
 p2exprpol = p2.get_expr_by_time(p2e)  # polynomial fit of protein expression, returns numpy Polynomial
 meanexpr = 100

@@ -21,7 +21,6 @@ class Protein:
         self.start_time = start_time
         self.init_rate = 1/(self.start_time+self.start_clearance_time)
 
-
     def get_length1(self, name):    # these next methods get stuff from he dataimport.py
         length = di.get_length(name)
         return length
@@ -70,8 +69,8 @@ class Protein:
             del expr[x]
             del tlist[x]
 
-        def func(x, a, b, c, d, e, f, g, h, i):#, j, k, l, m):
-            return a+b*x+c*x**2+d*x**3+e*x**4+f*x**5+g*x**6+h*x**7+i*x**8#+j*x**9+k*x**10+l*x**11+m*x**12
+        def func(x, a, b, c, d, e, f, g, h, i):  # , j, k, l, m):
+            return a+b*x+c*x**2+d*x**3+e*x**4+f*x**5+g*x**6+h*x**7+i*x**8  # +j*x**9+k*x**10+l*x**11+m*x**12
 
         popt, pcov = spo.curve_fit(func, tlist, expr)
         exprcurve = popt

@@ -1,0 +1,1 @@
+shape of results array is:(10, 10)

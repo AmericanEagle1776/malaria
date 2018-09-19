@@ -19,7 +19,6 @@ def get_pseq(name): #read file into list
     with open(name + 'protseq') as f:
         pseq = []
         for line in f:
-
             for c in line:
                 if c == '\n':
                     continue

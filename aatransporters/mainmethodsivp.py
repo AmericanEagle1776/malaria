@@ -3,9 +3,10 @@ import config
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 import numpy as np
+import numpy.polynomial.polynomial as npo
 
 
-result = solve_ivp(lambda t, y: odesysivp.f(t, y, config.told), (0, 50), odesysivp.y0, t_eval=np.linspace(0, 50, 1000))
+result = solve_ivp(lambda t, y: odesysivp.f(t, y, config.told), (0, 53), odesysivp.y0, t_eval=np.linspace(0, 53, 1000))
 
 P1 = []
 Pe = []
@@ -20,15 +21,16 @@ plot1.set_xlabel('time in hrs')
 plot1.legend(fontsize='small')
 
 plot2 = fig.add_subplot(312)
-plot2.plot(result.t, result.y[1], label='test protein for protein half life of 43 mins')
+plot2.plot(result.t, result.y[3], label='protein {}'.format(odesysivp.p2.name))
 plot2.set_ylabel('amount of protein')
 plot2.set_xlabel('time in hrs')
 plot2.legend(fontsize='small')
 
-plot3 = fig.add_subplot(313)
+#plot2 = fig.add_subplot(313)
+#plot2.plot(result.t, result.y[4], label='protein {}'.format(odesysivp.p3.name))
+#plot2.set_ylabel('amount of protein')
+#plot2.set_xlabel('time in hrs')
+#plot2.legend(fontsize='small')
 
-plot3.plot(result.t, result.y[3], label='protein {}'.format(odesysivp.p2.name))
-plot3.set_ylabel('amount of protein')
-plot3.set_xlabel('time in hrs')
-plot3.legend(fontsize='small')
 plt.show()
+#plt.savefig('proteinabundances.pdf')
