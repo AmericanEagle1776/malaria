@@ -1,13 +1,11 @@
 import numpy as np
 import scipy.optimize as spo
 import dataimport as di
-import numpy.polynomial.polynomial as npo
-import matplotlib as plt
 
 
 class Protein:
 
-    def __init__(self, name, start_time = 0):
+    def __init__(self, name, start_time=0):
 
         self.name = name
         self.length = self.get_length1(name)  # get length in amount of amino acids via helper function

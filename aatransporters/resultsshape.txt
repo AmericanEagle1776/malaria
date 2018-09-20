@@ -1,1 +1,1 @@
-shape of results array is:(20, 20)
+shape of results array is:(50, 50)
